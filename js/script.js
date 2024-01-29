@@ -8,12 +8,17 @@ createApp({
             todolist: []
         }
     },
+
+    mounted() {
+        this.getToDoList();
+    },
     
     methods: {
 
         getToDoList() {
-            aaxios.get(this.apiURL).then((response) => {
+            axios.get(this.apiURL).then((response) => {
                 this.todolist = response.data;
+                console.log(response.data);
             });
         }
 

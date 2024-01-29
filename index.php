@@ -18,12 +18,17 @@
                 <div class="col-12">
                     <div class="content text-center">
                         <?php
-                            echo "<h1>TODOLIST<h1>";
+                            echo "<h1>TODOLIST</h1>";
                         ?>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="content text-center">
+                        <ul>
+                            <li v-for="(task, index) in todolist" :key="index">
+                                {{ task.description }}
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
