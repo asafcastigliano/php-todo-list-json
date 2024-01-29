@@ -1,0 +1,15 @@
+[
+    {
+      "description": "Fare la spesa",
+      "completed": false
+    },
+    {
+      "description": "Pagare le bollette",
+      "completed": false
+    },
+    {
+      "description": "Chiamare il meccanico",
+      "completed": true
+    }
+  ]
+  
